@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.stay4it.im.widget.TabIndicator
+        android:id="@+id/mHomeIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_indicator_gray"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <View
+        android:id="@+id/mHomeIndicatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/mHomeIndicator"
+        android:background="@color/widgets_general_row_line" />
+
+    <FrameLayout
+        android:id="@+id/mHomeFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/mHomeIndicatorLine" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/mChatTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mChatOutLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mChatTimeLabel" >
+
+        <ImageView
+            android:id="@+id/mChatOutAvatarImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mini_avatar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:id="@+id/mChatOutImgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/mChatOutAvatarImg"
+            android:background="@drawable/chatto_bg"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:id="@+id/mChatOutMsgImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:maxHeight="60dp"
+                android:maxWidth="45dp"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/mChatOutMsgStatus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@id/mChatOutImgLayout"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/mChatOutImgLayout"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/mChatOutMsgResendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mChatOutMsgStatus"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/mChatOutMsgStatus"
+            android:text="重发"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/mChatTimeLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="12sp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/mChatInLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mChatTimeLabel" >
+
+        <ImageView
+            android:id="@+id/mChatInAvatarImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mini_avatar"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/mChatInMsgLabel"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/mChatInAvatarImg"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:minHeight="45dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

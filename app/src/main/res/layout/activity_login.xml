@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.stay4it.im.widget.EditorView
+        android:id="@+id/mLoginAccountEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        stay:hint="@string/mLoginAccountHintLabel"
+        stay:text="@string/mLoginAccountLabel" />
+
+    <com.stay4it.im.widget.EditorView
+        android:id="@+id/mLoginPwdEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mLoginAccountEdt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        stay:hint="@string/mLoginPasswordHintLabel"
+        stay:text="@string/mLoginPasswordLabel" />
+
+    <Button
+        android:id="@+id/mLoginSubmitBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mLoginPwdEdt"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_login_btn"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/mLoginSubmitLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

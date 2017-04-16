@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/mChatTimeLabel"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="12sp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/mChatOutLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mChatTimeLabel" >
+
+        <ImageView
+            android:id="@+id/mChatOutAvatarImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mini_avatar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/mChatOutMsgLabel"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/mChatOutAvatarImg"
+            android:background="@drawable/chatto_bg"
+            android:gravity="center_vertical"
+            android:minHeight="45dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="6dp" />
+
+        <ProgressBar
+            android:id="@+id/mChatOutMsgStatus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@id/mChatOutMsgLabel"
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            android:layout_toLeftOf="@id/mChatOutMsgLabel" />
+        
+        <Button
+            android:id="@+id/mChatOutMsgResendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mChatOutMsgStatus"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="重发"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/mChatOutMsgStatus" />
+    </RelativeLayout>
+
+</RelativeLayout>

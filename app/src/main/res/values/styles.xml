@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="Theme" parent="AppBaseTheme">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="actionBarStyle">@style/actionbarStyle</item>
+    </style>
+    
+    <style name="Theme.Light" parent="Theme">
+		<item name="SkinBackground">@style/skinLightStyle</item>        
+    </style>
+    
+    <style name="Theme.Dark" parent="Theme">
+		<item name="SkinBackground">@style/skinDarkStyle</item>        
+    </style>
+    
+    
+    <style name="skinLightStyle">
+        <item name="android:background">#0000ff</item>
+    </style>
+    
+    <style name="skinDarkStyle">
+        <item name="android:background">#00ff00</item>
+    </style>
+    
+    <style name="actionbarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/actionbarTextStyle</item>
+		<item name="background">@drawable/bg_actionbar</item>
+        <item name="backgroundStacked">@null</item>
+        <item name="backgroundSplit">@null</item>
+        <item name="divider">@null</item>
+        <item name="icon">@drawable/whatsnew_logo1</item>
+    </style>
+    
+    <style name="actionbarTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="RowLabelStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="RowDetailLabelStyle" >
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    
+
+</resources>

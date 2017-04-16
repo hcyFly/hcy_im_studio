@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000" >
+
+    <FrameLayout
+        android:id="@+id/welcome_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/welcome_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcome_bg" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/welcome_language_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="13.0dip"
+        android:layout_marginTop="13.0dip"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="15.0dip"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:id="@+id/welcome_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110.0dip"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        android:src="@drawable/welcome_logo_ch" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@id/welcome_earth_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/welcome_people_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-52.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/welcome_earth" />
+        
+        <ImageView
+            android:id="@id/welcome_people_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/welcome_people" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+
+        <RelativeLayout
+            android:id="@+id/select_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20.0dip"
+            android:visibility="gone"
+            android:background="@null" >
+
+            <Button
+                android:id="@+id/select_login_btn"
+                android:layout_width="123.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="21.0dip"
+                android:background="@drawable/login_welcome_reg_btn"
+                android:gravity="center"
+                android:paddingBottom="2.0dip"
+                android:paddingTop="0.0dip"
+                android:shadowColor="#ffb8b8b8"
+                android:shadowDx="1.2"
+                android:shadowDy="1.2"
+                android:shadowRadius="1.0"
+                android:text="@string/intro_existed_login"
+                android:textColor="#ff4b4b4b"
+                android:textSize="17.0dip" />
+
+            <Button
+                android:id="@+id/select_register_btn"
+                android:layout_width="123.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/login_welcome_login_btn"
+                android:gravity="center"
+                android:paddingBottom="2.0dip"
+                android:paddingTop="0.0dip"
+                android:shadowColor="#ff016c08"
+                android:shadowDx="1.2"
+                android:shadowDy="1.2"
+                android:shadowRadius="1.0"
+                android:text="@string/intro_create_account_qq"
+                android:textColor="#ffffffff"
+                android:textSize="17.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

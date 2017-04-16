@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="@color/widgets_emo_pannel_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mEmoViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0" />
+
+        <com.stay4it.im.widget.chat.emo.EmoDotView
+            android:id="@+id/mEmoDotView"
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/widgets_general_row_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp" >
+
+        <com.stay4it.im.widget.chat.emo.EmoGroupView
+            android:id="@+id/mEmoGroupView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/mEmoAddMoreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

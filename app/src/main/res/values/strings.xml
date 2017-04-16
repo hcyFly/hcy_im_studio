@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">无聊</string>
+    <string name="mHomeProfileLabel">Profile</string>
+    <string name="mHomeContactLabel">Contact</string>
+    <string name="mHomeConversationLabel">Conversation</string>
+    <string name="mTabMsgLabel">有聊</string>
+    <string name="mTabContactLabel">通讯录</string>
+    <string name="mTabMomentsLabel">发现</string>
+    <string name="mTabProfileLabel">我</string>
+    <string name="mLoginSubmitLabel">登录</string>
+    <string name="mChatImageMessageLabel">[图片]</string>
+    <string name="mChatEmoMessageLabel">[表情]</string>
+    <string name="mChatLoadMoreLabel">Load More</string>
+    <string name="mChatPluginImagesLabel">Images</string>
+    <string name="mChatPluginCameraLabel">Camera</string>
+    <string name="mLoginTitleLabel">Log in Wechat</string>
+    <string name="mLoginAccountLabel">帐 号</string>
+    <string name="mLoginAccountHintLabel">QQ号/微信号/Email</string>
+    <string name="mLoginPasswordLabel">密 码</string>
+    <string name="mLoginPasswordHintLabel">密 码</string>
+    <string name="mChatSendBtnLabel">发送</string>
+    <string name="intro_create_account_qq">Sign Up</string>
+    <string name="intro_existed_login">Log In</string>
+
+</resources>

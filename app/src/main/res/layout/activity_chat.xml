@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mChatLoadMoreBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/mChatLoadMoreLabel" />
+
+    <com.stay4it.im.widget.chat.ChatEditorView
+        android:id="@+id/mChatEditorView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/mChatLsv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:transcriptMode="normal"
+        android:divider="@null"
+        android:layout_above="@id/mChatEditorView"
+        android:layout_below="@id/mChatLoadMoreBtn" />
+
+</RelativeLayout>
